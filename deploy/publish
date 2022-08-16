@@ -6,5 +6,5 @@ PASS=$(cat ~/.auth|sed -n '2p')
 BUILD_TAG=$(cat ~/.auth|sed -n '3p')
 
 echo $PASS $REGISTRY $IMAGE
-docker login -u ricardo -p $PASS $REGISTRY
+docker login -u scastell77 -p $PASS $REGISTRY
 docker run --rm $REGISTRY/$IMAGE:$BUILD_TAG java -jar /app/app.jar
