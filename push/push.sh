@@ -5,7 +5,7 @@ echo "*** Preparing to push ***"
 echo "########################"
 
 REGISTRY="https://index.docker.io/v1/"
-IMAGE="app"
+IMAGE="scastell77/app"
 
 echo "*** Logging in ***"
 docker login -u scastell77 -p $PASS $REGISTRY
