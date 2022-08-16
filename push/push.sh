@@ -8,7 +8,7 @@ REGISTRY="linuxfacilito.online:5043"
 IMAGE="app"
 
 echo "*** Logging in ***"
-docker login -u ricardo -p $PASS $REGISTRY
+docker login -u scastell77 -p $PASS $REGISTRY
 echo "*** Tagging image ***"
 docker tag $IMAGE:$BUILD_TAG $REGISTRY/$IMAGE:$BUILD_TAG
 echo "*** Pushing image ***"
