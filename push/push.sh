@@ -4,7 +4,7 @@ echo "########################"
 echo "*** Preparing to push ***"
 echo "########################"
 
-REGISTRY="linuxfacilito.online:5043"
+REGISTRY="https://index.docker.io/v1/"
 IMAGE="app"
 
 echo "*** Logging in ***"
