@@ -11,7 +11,7 @@ echo "*** Logging in ***"
 docker login -u scastell77 -p $PASS $REGISTRY
 
 echo "*** Tagging image ***"
-docker tag scastell77/$IMAGE:$BUILD_TAG scastell77/$IMAGE:$BUILD_TAG
+docker tag $REGISTRY/$IMAGE:$BUILD_TAG $REGISTRY/$IMAGE:$BUILD_TAG
 
 echo "*** Pushing image ***"
-docker push scastell77/$IMAGE:$BUILD_TAG
+docker push $REGISTRY/$IMAGE:$BUILD_TAG
