@@ -34,7 +34,10 @@ pipeline {
         }
         stage('Push') {
             steps {
-                sh './push/push.sh'
+                cd /home/dockeradmin;
+                docker build -t simple-java-maven .; 
+                docker run -d --name simple-java-container -p 8085:8080 simple-java-maven;
+                docker ps -a;
             }
         }
         stage('Deploy') {
